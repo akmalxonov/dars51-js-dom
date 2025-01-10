@@ -1,0 +1,150 @@
+#number {
+    text-align: center;
+    font-size: 30px;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.btn2 {
+    display: block;
+    margin: auto;
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.btn3 {
+    width: 100px;
+}
+
+.card {
+    border: 1px solid black;
+    width: 100px;
+    margin: auto;
+}
+
+.images {
+    width: 1500px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.img {
+    width: 100%;
+    height: 800px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    height: 70px;
+    margin: 0;
+}
+
+.input {
+    width: 200px;
+    height: 30px;
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    outline: none;
+}
+
+.btn4 {
+    width: 100px;
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+
+
+.winner{
+    /* font-size: 10px; */
+    font-weight: bold;
+    color: #ffcc00;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeIn 2s forwards, glow 1s infinite alternate;
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Yoritilgan effekt */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ffcc00;
+    }
+
+    100% {
+        text-shadow: 0 0 15px #ffcc00, 0 0 30px #ffcc00, 0 0 45px #ffcc00;
+    }
+}
+
+.winner {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeIn 2s forwards, glow 1s infinite alternate;
+    margin: 0;
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #confetti-container {
+    position: relative;
+    width: 1500px;
+    padding: 300px 0;
+    /* height: 300px; */
+    /* border: 2px solid #ccc; */
+    background-color: black;
+    overflow: hidden;
+  }
+
+  .confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    animation: fall 3s linear infinite, sway 3s ease-in-out infinite;
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(300px);
+    }
+  }
+
+  @keyframes sway {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50px);
+    }
+  }
+
